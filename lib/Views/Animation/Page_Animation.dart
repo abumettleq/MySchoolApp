@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class PageAnimation extends PageRouteBuilder{
   final Widget page;
-  PageAnimation(this.page):super(
+  AlignmentGeometry alignmentGeometry;
+  PageAnimation(this.page,this.alignmentGeometry):super(
     pageBuilder: (context, animation,anotherAnimation) =>page,
     transitionDuration: const Duration(milliseconds: 1500),
     reverseTransitionDuration: const Duration(milliseconds: 500),
@@ -13,7 +14,7 @@ class PageAnimation extends PageRouteBuilder{
         reverseCurve: Curves.fastOutSlowIn
       );
       return Align(
-        alignment: Alignment.centerLeft,
+        alignment: alignmentGeometry,
         child: SizeTransition(
           sizeFactor: animation,
           axis: Axis.horizontal,
@@ -23,6 +24,4 @@ class PageAnimation extends PageRouteBuilder{
       );
     }
   );
-
-
 }

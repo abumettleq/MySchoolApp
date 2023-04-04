@@ -114,7 +114,7 @@ class TeacherDrawer extends StatelessWidget {
                   DrawerButton(
                     title: 'Notifications',
                     onButtonPressed: (){
-                      Navigator.push(context, PageAnimation(StudentNotifications()));
+                      Navigator.push(context, PageAnimation(StudentNotifications(),Alignment.centerLeft));
                     },
                     iconButton: Icons.notifications_none_rounded,
                   ),

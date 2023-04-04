@@ -41,7 +41,7 @@ class TeacherHomePage extends StatelessWidget {
         child: ListView.builder(
             itemCount: 5,
             itemBuilder:(BuildContext context,int index){
-              return const BodyContentWidget();
+              return BodyContentWidget(function: (){},);
             }
         ),
       ),

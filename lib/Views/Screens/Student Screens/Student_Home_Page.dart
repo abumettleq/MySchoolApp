@@ -10,7 +10,6 @@ class StudentHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
@@ -42,7 +41,7 @@ class StudentHomePage extends StatelessWidget {
         child: ListView.builder(
           itemCount: 5,
           itemBuilder:(BuildContext context,int index){
-            return const BodyContentWidget();
+            return BodyContentWidget(function: (){},);
           }
         ),
       ),

@@ -1,7 +1,1 @@
-# My-School-App"# MySchoolApp" 
-"# MySchoolApp" 
-"# MySchoolApp" 
-"# MySchoolApp" 
-"# MySchoolApp" 
-"# MySchoolApp" 
-"# MySchoolApp" 
+# My-School-App

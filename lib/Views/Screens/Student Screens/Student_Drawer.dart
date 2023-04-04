@@ -5,6 +5,7 @@ import 'package:my_school_app/Views/Animation/Page_Animation.dart';
 import 'package:my_school_app/Views/Screens/Student%20Screens/Student_Notifications.dart';
 import '../../../Router/App_Router.dart';
 import '../../Widgets/Drawer_Button_Widget.dart';
+import 'Student_Profile.dart';
 
 class StudentDrawer extends StatelessWidget {
   const StudentDrawer({Key? key}) : super(key: key);
@@ -114,7 +115,7 @@ class StudentDrawer extends StatelessWidget {
                   DrawerButton(
                     title: 'Notifications',
                     onButtonPressed: (){
-                      Navigator.push(context, PageAnimation(StudentNotifications()));
+                      Navigator.push(context, PageAnimation(const StudentNotifications(),Alignment.centerLeft));
                     },
                     iconButton: Icons.notifications_none_rounded,
                   ),
@@ -122,7 +123,7 @@ class StudentDrawer extends StatelessWidget {
                   DrawerButton(
                     title: 'Profile',
                     onButtonPressed: (){
-
+                      Navigator.push(context, PageAnimation(StudentProfile(),Alignment.centerLeft));
                     },
                     iconButton: Icons.bar_chart_rounded,
                   ),
